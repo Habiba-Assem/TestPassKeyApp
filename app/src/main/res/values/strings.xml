@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PassKeyApp</string>
+
+    <!--    start up screen-->
+    <string name="try_passkey_demo">Try PassKeys Demo</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+
+    <!--    sign up-->
+    <string name="create_new_account">Create New Account</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="operation_in_progress">operation in progress…</string>
+    <string name="sign_into_your_account_with_passkey_message">Sign in to your account easily and securely with a passkey. Note: Your biometric data is only stored on your devices and will never be shared with anyone.</string>
+    <string name="sign_up_with_passkey">Sign Up with passkey</string>
+    <string name="divider">------------------------------      OR      ------------------------------</string>
+    <string name="sign_into_your_account_with_password_message">Sign up in to your account with a password. Your password will be saved securely with your password provider.</string>
+    <string name="sign_up_with_password_instead">Sign up with a password instead</string>
+
+<!--    sign in-->
+    <string name="sign_in_with_password_or_passkey">Sign in with passkey/saved password</string>
+
+<!--    home-->
+    <string name="sign_out">Sign out and try again</string>
+</resources>
