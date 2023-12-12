@@ -9,7 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="30dp">
+        android:padding="30dp"
+        android:background="@color/background">
 
         <TextView
             android:id="@+id/signed_in_text"

@@ -1,8 +1,8 @@
 {
     "challenge": "<challenge>",
     "rp": {
-        "id": "unibeam.github.io",
-        "name": "CredMan App Test"
+        "id": "bdcapp.accounts.justpass.me",
+        "name": "PassKeyApp"
     },
     "pubKeyCredParams": [
         {

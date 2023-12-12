@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.MaterialComponents.ExtendedFloatingActionButton.Circle" parent="">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.App.Circular</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.Circular" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ThemeOverlay.BDCWallet.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ModalBottomSheetDialog</item>
+        <item name="borderlessButtonStyle">@style/Widget.BDCWallet.Button.TextButton</item>
+    </style>
+
+    <style name="Widget.BDCWallet.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="ModalBottomSheetDialog" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="shapeAppearance">@style/ShapeAppearance.BDCWallet.LargeComponent.OnlyTop</item>
+        <item name="behavior_skipCollapsed">true</item>
+        <item name="android:backgroundTint">@color/background</item>
+    </style>
+
+    <style name="ShapeAppearance.BDCWallet.LargeComponent.OnlyTop" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeTopRight">20dp</item>
+    </style>
+</resources>
