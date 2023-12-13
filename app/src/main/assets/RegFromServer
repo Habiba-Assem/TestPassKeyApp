@@ -1,7 +1,7 @@
 {
     "challenge": "<challenge>",
     "rp": {
-        "id": "bdcapp.accounts.justpass.me",
+        "id": "testing.accounts.justpass.me",
         "name": "PassKeyApp"
     },
     "pubKeyCredParams": [
