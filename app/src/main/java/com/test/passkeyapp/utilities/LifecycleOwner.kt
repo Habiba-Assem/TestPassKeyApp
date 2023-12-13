@@ -71,13 +71,13 @@ fun <T> Fragment.observeNavigationResultFromDialogOnce(
             }
         }
     }
-    navBackStackEntry.lifecycle.addObserver(observer)
+    navBackStackEntry.getLifecycle().addObserver(observer)
 
     // As addObserver() does not automatically remove the observer, we
     // call removeObserver() manually when the view lifecycle is destroyed
     viewLifecycleOwner.lifecycle.addObserver(LifecycleEventObserver { _, event ->
         if (event == Lifecycle.Event.ON_DESTROY) {
-            navBackStackEntry.lifecycle.removeObserver(observer)
+            navBackStackEntry.getLifecycle().removeObserver(observer)
         }
     })
 }

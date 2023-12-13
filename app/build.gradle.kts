@@ -73,9 +73,9 @@ dependencies {
     implementation("androidx.security:security-crypto-ktx:1.1.0-alpha06")
 
     // Hilt
-    implementation("androidx.hilt:hilt-navigation-fragment:1.0.0")
+    implementation("androidx.hilt:hilt-navigation-fragment:1.1.0")
     implementation("com.google.dagger:hilt-android:$hiltVersion")
-    implementation("androidx.databinding:databinding-runtime:8.1.2")
+    implementation("androidx.databinding:databinding-runtime:8.2.0")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
@@ -95,6 +95,15 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
     implementation("com.github.mrmike:ok2curl:0.8.0")
+
+    //credential manager
+    implementation ("androidx.credentials:credentials-play-services-auth:1.2.0")
+    implementation ("androidx.credentials:credentials:1.2.0")
+
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
+    implementation ("androidx.lifecycle:lifecycle-runtime-compose:2.6.2")
 
     // Test
     testImplementation("junit:junit:4.13.2")
