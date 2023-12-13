@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         }
         DataProvider.initSharedPref(applicationContext)
         initUi()
-        subscribeUi()
+
     }
 
     private fun initUi() {
@@ -40,6 +40,4 @@ class MainActivity : AppCompatActivity() {
         binding.lifecycleOwner = this
     }
 
-    private fun subscribeUi() {
-    }
 }
