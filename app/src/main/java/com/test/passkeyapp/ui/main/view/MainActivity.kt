@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         if (BuildConfig.DEBUG) {
             Timber.plant(Timber.DebugTree())
         }
+        DataProvider.initSharedPref(applicationContext)
         initUi()
         subscribeUi()
     }
@@ -30,8 +31,13 @@ class MainActivity : AppCompatActivity() {
     private fun initUi() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
+        val graphInflater = navController.navInflater
+        val navGraph = graphInflater.inflate(R.navigation.nav_main)
+        val destination = if (DataProvider.isSignedIn()) R.id.homeFragment else R.id.startUpScreenFragment
+        navGraph.setStartDestination(destination)
+        navController.graph = navGraph
+
         binding.lifecycleOwner = this
-        DataProvider.initSharedPref(applicationContext)
     }
 
     private fun subscribeUi() {
