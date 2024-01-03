@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.test.customsnackbar.CustomSnackBar
 import com.test.passkeyapp.data.DataProvider
 import com.test.passkeyapp.databinding.FragmentHomeBinding
 import com.test.passkeyapp.utilities.observe
@@ -47,6 +48,7 @@ class HomeFragment : Fragment() {
 
     //navigation
     private fun navigateToStart(){
+        CustomSnackBar.showSnackBar(binding.root, "You just signed out")
         DataProvider.configureSignedInPref(false)
         findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToStartUpScreenFragment())
     }

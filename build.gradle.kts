@@ -5,6 +5,7 @@ plugins {
 
     id("com.google.dagger.hilt.android") version "2.47" apply false
     id("androidx.navigation.safeargs.kotlin") version "2.6.0" apply false
+    id("com.android.library") version "8.1.0" apply false
 
 }
 val hiltVersion by extra { "2.47" }

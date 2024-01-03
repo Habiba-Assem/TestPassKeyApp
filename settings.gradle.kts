@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "PassKeyApp"
 include(":app")
- 
+include(":CustomSnackBar")
