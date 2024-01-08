@@ -2,8 +2,6 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-android")
-    id("kotlin-kapt")
-    id("com.google.dagger.hilt.android")
     id("kotlin-parcelize")
     id("androidx.navigation.safeargs.kotlin")
 }
@@ -74,16 +72,10 @@ dependencies {
 
     // Hilt
     implementation("androidx.hilt:hilt-navigation-fragment:1.1.0")
-    implementation("com.google.dagger:hilt-android:$hiltVersion")
     implementation("androidx.databinding:databinding-runtime:8.2.0")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
-    implementation("androidx.paging:paging-common-ktx:3.2.1")
-    implementation("androidx.paging:paging-runtime-ktx:3.2.1")
-    implementation("androidx.credentials:credentials:1.2.0")
-    implementation(project(mapOf("path" to ":CustomSnackBar")))
-    kapt("com.google.dagger:hilt-compiler:$hiltVersion")
 
     // Logging
     implementation("com.jakewharton.timber:timber:5.0.1")
@@ -107,7 +99,7 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-runtime-compose:2.6.2")
 
     //adding test custom library
-    project(":CustomSnackBar")
+    implementation(files("libs/CustomSnackBar-release.aar"))
 
     // Test
     testImplementation("junit:junit:4.13.2")
